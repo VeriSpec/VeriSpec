@@ -53,11 +53,18 @@ export default function Page() {
 
   return (
     <div className="min-h-screen bg-neutral-950 text-white">
-      <header className="border-b border-white/10 bg-neutral-950/80">
+      <header className="border-b border-white/10 bg-neutral-950/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-10">
-          <span className="text-lg font-semibold tracking-tight">
-            VeriSpec Technology Inc.
-          </span>
+          <div className="flex items-center gap-3">
+            <img
+              src="/logo.svg"
+              alt="VeriSpec Technology Inc."
+              className="h-7 w-auto object-contain"
+            />
+            <span className="text-lg font-semibold tracking-tight">
+              VeriSpec Technology Inc.
+            </span>
+          </div>
 
           <div className="hidden items-center gap-3 sm:flex">
             <a
@@ -134,7 +141,7 @@ export default function Page() {
             </div>
 
             <div className="relative">
-              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-5 shadow-2xl shadow-black/40">
+              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-5 shadow-2xl shadow-black/40 backdrop-blur-sm">
                 <div className="rounded-[1.5rem] border border-white/10 bg-neutral-900 p-5">
                   <div className="mb-4 flex items-center justify-between">
                     <div>
@@ -380,7 +387,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="px-6 pb-20 md:px-10">
+      <section className="px-6 pb-8 pt-20 md:px-10">
         <div className="mx-auto max-w-7xl rounded-[2rem] border border-white/10 bg-white/5 px-8 py-12 md:px-12 md:py-16">
           <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
@@ -413,6 +420,28 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      <footer className="px-6 pb-12 md:px-10">
+        <div className="mx-auto max-w-7xl border-t border-white/10 pt-6 text-xs leading-6 text-white/45">
+          <p>
+            Disclaimer: Information presented on this website is provided for
+            general informational purposes only and does not constitute legal,
+            engineering, regulatory, safety, compliance, or professional advice.
+            Any workflows, controls, approvals, or procedures referenced on this
+            site are illustrative only and must be independently configured,
+            verified, and validated by each organization to suit its own legal,
+            operational, contractual, and regulatory requirements.
+          </p>
+          <p className="mt-4">
+            VeriSpec Technology Inc. makes no representation that any particular
+            configuration, use case, or implementation will satisfy all laws,
+            codes, standards, permits, internal policies, or project-specific
+            obligations. Use of any platform, software, or information described
+            on this site remains the sole responsibility of the user organization
+            and its authorized personnel.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
