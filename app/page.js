@@ -57,9 +57,9 @@ export default function Page() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 md:px-10">
           <div className="flex items-center gap-3">
             <img
-              src="/logo.svg"
+              src="/logo.png"
               alt="VeriSpec Technology Inc."
-              className="h-7 w-auto object-contain"
+              className="h-8 w-auto object-contain"
             />
             <span className="text-lg font-semibold tracking-tight">
               VeriSpec Technology Inc.
